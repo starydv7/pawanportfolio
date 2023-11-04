@@ -3,6 +3,7 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from "./scenes/Navbar";
 import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
+import Gallery from "./scenes/Gallery";
 
 function App() {
   const[selectedPage,setSelectedPage]=useState('home');
@@ -32,6 +33,7 @@ function App() {
           />
         )}
         <Landing setSelectedPage={setSelectedPage}/>
+        <Gallery setIsTopOfPage={setSelectedPage}/>
       </div>
     </div>
     
